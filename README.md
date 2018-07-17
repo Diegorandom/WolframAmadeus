@@ -12,9 +12,7 @@ Componentes
 
 en esta seccion, a partir de synths y generadores unitarios se se crearan patrones, escalas y se dispondra de parametros, entre otras cosas, que nos permitan modificarlos en un GUI.
 
-4.GUI
-
-Interfaz para el usuario.
+4.GUI - Interfaz para el usuario.
 
 5. codigo que nos permita usar el teclado en conjunto (usar codigo de diego)
 
@@ -27,42 +25,40 @@ ParteI
 
 La primera parte debe ser terminada antes del 19 de noviembre
 
-Modulo de integracion
+Modulo de integracion -
 Funcion de integracion que devuelva la solución y la gráfica
 
-Modulo de derivacion
+Modulo de derivacion -
 Funcion de derivacion que devuelva la solución y la gráfica
 
-Modulo de patrones
+Modulo de patrones -
 Funcion que generará un patrón de percusiones en caso de que a gráfica de la solucion controle el volumen de la señal raiz
 
-Modulo de reverb
+Modulo de reverb -
 Funcion que generará un reverb en caso que la grafica de la solucion controle un reverb sobre la señal raiz
 
-Modulo de desfase
+Modulo de desfase -
 Funcion que genere un desfase en caso de que la grafica de la solucion controle la fase de una señal raiz
 
-Modulo Pulso 
+Modulo Pulso  -
 Funcion que genere un pulso cuando queremos que la gráfica controle la tasa de pulsos
 
-Modulo de paneo 
+Modulo de paneo  -
 funcion que panie el synth raiz
 
-Modulo de vibrato
+Modulo de vibrato -
 vibrato sobre el synth raiz
 
-Modulo de delay
+Modulo de delay -
 delay sobre la senal raiz
 
-Modulo 8
+Modulo 8 -
 codigo para usar el teclado
 
-Modulo 9
+Modulo 9 -
 reproducira unos aplausos épicos cuando se complete una operacion difícil
 
-Modulo 10
-GUI
-Cabe mencionar que el GUI sera solo un cascaron hasta que los primeros dos modulos esten terminados y se unifique el codigo.
+Modulo 10 - GUI - Cabe mencionar que el GUI sera solo un cascaron hasta que los primeros dos modulos esten terminados y se unifique el codigo.
 
 caracteristicas de la interfaz:
 1. Facil comprension para el usuario
