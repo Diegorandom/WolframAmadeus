@@ -1,0 +1,147 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5180,        139]
+NotebookOptionsPosition[      4884,        124]
+NotebookOutlinePosition[      5242,        140]
+CellTagsIndexPosition[      5199,        137]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"t", "=", 
+   RowBox[{"CreateScheduledTask", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Clear", "[", 
+       RowBox[{"datain", ",", "datafromsc", ",", "funinteg"}], "]"}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"datafromsc", "=", 
+       RowBox[{
+       "Import", "[", 
+        "\"\</Users/macbookair/Documents/WolframAmadeus/wftemp/data_integ.txt\
+\>\"", "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"datain", "=", " ", 
+       RowBox[{"ToExpression", "[", 
+        RowBox[{"datafromsc", ",", " ", "TeXForm"}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"funinteg", "=", " ", 
+       RowBox[{"Integrate", "[", 
+        RowBox[{"datain", ",", " ", "x"}], "]"}]}], ";", 
+      "\[IndentingNewLine]", "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"datain", " ", "===", "0"}], ",", 
+        RowBox[{"Print", "[", "\"\<waiting\>\"", "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"Print", "[", "funinteg", "]"}], ";", "\[IndentingNewLine]", 
+         
+         RowBox[{"Export", "[", 
+          RowBox[{
+          "\"\</Users/macbookair/Documents/WolframAmadeus/wftemp/data_integ_\
+return.txt\>\"", ",", " ", "funinteg"}], "]"}], ";", "\[IndentingNewLine]", 
+         RowBox[{"tablainteg", "=", 
+          RowBox[{"Table", "[", 
+           RowBox[{
+            RowBox[{"N", "[", "funinteg", "]"}], ",", " ", 
+            RowBox[{"{", 
+             RowBox[{"x", ",", " ", "0", ",", "20", ",", "0.1"}], "}"}]}], 
+           "]"}]}], ";", "\[IndentingNewLine]", 
+         RowBox[{"Export", "[", 
+          RowBox[{
+          "\"\</Users/macbookair/Documents/WolframAmadeus/wftemp/data_\
+tablainteg_return.txt\>\"", ",", " ", "tablainteg"}], "]"}], ";"}], 
+        "\[IndentingNewLine]", ",", 
+        RowBox[{"Print", "[", "\"\<WTF\>\"", "]"}]}], "\[IndentingNewLine]", 
+       "]"}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+      RowBox[{"Clear", "[", 
+       RowBox[{
+       "datain", ",", " ", "datafromsc", ",", " ", "funderiv", ",", 
+        "tabladeriv"}], "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"datafromsc", "=", 
+       RowBox[{
+       "Import", "[", 
+        "\"\</Users/macbookair/Documents/WolframAmadeus/wftemp/data_deriv.txt\
+\>\"", "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"datain", "[", "x_", "]"}], "=", " ", 
+       RowBox[{"ToExpression", "[", 
+        RowBox[{"datafromsc", ",", " ", "TeXForm"}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"funderiv", "=", 
+       RowBox[{"D", "[", 
+        RowBox[{
+         RowBox[{"datain", "[", "x", "]"}], ",", "x"}], "]"}]}], ";", 
+      "\[IndentingNewLine]", "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"funderiv", " ", "===", "0"}], ",", 
+        RowBox[{"Print", "[", "\"\<waiting\>\"", "]"}], ",", 
+        "\[IndentingNewLine]", " ", 
+        RowBox[{
+         RowBox[{"Print", "[", "funderiv", "]"}], ";", "\[IndentingNewLine]", 
+         
+         RowBox[{"Export", "[", 
+          RowBox[{
+          "\"\</Users/macbookair/Documents/WolframAmadeus/wftemp/data_deriv_\
+return.txt\>\"", ",", " ", "funderiv"}], "]"}], ";", "\[IndentingNewLine]", 
+         RowBox[{"tabladeriv", "=", 
+          RowBox[{"Table", "[", 
+           RowBox[{
+            RowBox[{"N", "[", "funderiv", "]"}], ",", " ", 
+            RowBox[{"{", 
+             RowBox[{"x", ",", " ", "0", ",", "20", ",", "0.1"}], "}"}]}], 
+           "]"}]}], ";", "\[IndentingNewLine]", 
+         RowBox[{"Export", "[", 
+          RowBox[{
+          "\"\</Users/macbookair/Documents/WolframAmadeus/wftemp/data_\
+tabladeriv_return.txt\>\"", ",", " ", "tabladeriv"}], "]"}], ";"}], 
+        "\[IndentingNewLine]", ",", 
+        RowBox[{"Print", "[", "\"\<WTF\>\"", "]"}]}], "\[IndentingNewLine]", 
+       "]"}], ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", ",", 
+     "0.1"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"StartScheduledTask", "[", "t", "]"}], ";"}]}], "Input"],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"RemoveScheduledTask", "[", 
+    RowBox[{"ScheduledTasks", "[", "]"}], "]"}], ";"}]}]], "Input",
+ CellChangeTimes->{{3.687660716700671*^9, 3.687660717781654*^9}}]
+},
+WindowSize->{808, 690},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"11.0 para Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 4088, 95, 1117, "Input"],
+Cell[4649, 117, 231, 5, 101, "Input"]
+}
+]
+*)
+

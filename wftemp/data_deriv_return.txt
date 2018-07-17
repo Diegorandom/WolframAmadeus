@@ -1,0 +1,1 @@
+1 + Cos[x] + Sec[x]*Tan[x]

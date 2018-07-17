@@ -1,0 +1,1 @@
+x^2/2 - Cos[x] - Log[Cos[x/2] - Sin[x/2]] + Log[Cos[x/2] + Sin[x/2]]
