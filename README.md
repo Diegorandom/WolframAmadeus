@@ -4,26 +4,28 @@ Arquitectura del proyecto
 
 Componentes
 
-1.Funcion integradora
+1. Servidor de procesamientos matemáticos
 
-2.Funcion derivadora
+Funcion integradora y Funcion derivadora
+Realiza con Wolfram Mathematica todas las operaciones de cáculo  enviadas por SuperCollider y regresa una solución general al problema así como los puntos de la gráfica de la función matemática, tal gráfica será usada por SuperCollider para llenar un arreglo unidimensional de valores que serán servidos en un streams paralelos a diferentes generadores de audio para construir la experiencia sonora.
 
-3.Seccion de controles:
+2.GUI y asignación de paramétros
 
-en esta seccion, a partir de synths y generadores unitarios se se crearan patrones, escalas y se dispondra de parametros, entre otras cosas, que nos permitan modificarlos en un GUI.
+En esta seccion, a partir de synths y generadores unitarios se se crearan patrones, escalas y efectos.
 
 4.GUI - Interfaz para el usuario.
 
-5. codigo que nos permita usar el teclado en conjunto (usar codigo de diego)
+5. codigo que nos permita usar el teclado en conjunto (usar codigo de diego) - SIN TERMINAR
+
+Video tutorial del software - 
+https://www.youtube.com/watch?v=D2h2Vl4OYZs
 
 
 La arquitectura se divide en dos partes; los mudulos del programa y la unificacion del programa.
 
 El proyecto está dividido por modulos de funciones para que estos puedan ser programados simultaneamente.
 
-ParteI
-
-La primera parte debe ser terminada antes del 19 de noviembre
+Parte I
 
 Modulo de integracion -
 Funcion de integracion que devuelva la solución y la gráfica
@@ -52,16 +54,13 @@ vibrato sobre el synth raiz
 Modulo de delay -
 delay sobre la senal raiz
 
-Modulo 8 -
+Modulo 8 - SIN TERMINAR
 codigo para usar el teclado
 
-Modulo 9 -
-reproducira unos aplausos épicos cuando se complete una operacion difícil
-
-Modulo 10 - GUI - Cabe mencionar que el GUI sera solo un cascaron hasta que los primeros dos modulos esten terminados y se unifique el codigo.
+Modulo 9 - GUI - Cabe mencionar que el GUI sera solo un cascaron hasta que los primeros dos modulos esten terminados y se unifique el codigo.
 
 caracteristicas de la interfaz:
-1. Facil comprension para el usuario
+1. Que funcione
 2. Espacio en blanco para ingresas la ecuacion
 3. Serie de botones que idiquen que operacion se le hara a la ecuacion
    -Derivar
@@ -74,6 +73,3 @@ caracteristicas de la interfaz:
 9. Posibilidad de repetir el procedimiento con el fin de reproducir todos los elementos en conjunto.
 10. Boton que nos permita utilizar un teclado MIDI
 10. Boton de reset
-
-Notas:
-Todos los modulos deben ser guardados en la carpeta de dropbox del mismo nombre en el lugar asigado.
