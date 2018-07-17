@@ -16,6 +16,9 @@ en esta seccion, a partir de synths y generadores unitarios se se crearan patron
 
 5. codigo que nos permita usar el teclado en conjunto (usar codigo de diego)
 
+Video tutorial del software - 
+https://www.youtube.com/watch?v=D2h2Vl4OYZs
+
 
 La arquitectura se divide en dos partes; los mudulos del programa y la unificacion del programa.
 
