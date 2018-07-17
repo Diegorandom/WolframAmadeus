@@ -1,6 +1,7 @@
 # WolframAmadeus
 
 Arquitectura del proyecto 
+
 Licencia - GNU General Public License v3.0
 
 Componentes
