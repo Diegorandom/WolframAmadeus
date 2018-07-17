@@ -3,14 +3,14 @@
 Arquitectura del proyecto 
 
 Componentes
+
 1.Funcion integradora
 
 2.Funcion derivadora
 
 3.Seccion de controles:
 
-en esta seccion, a partir de synths y generadores unitarios
-çse se crearan patrones, escalas y se dispondra de parametros, entre otras cosas, que nos permitan modificarlos en un GUI.
+en esta seccion, a partir de synths y generadores unitarios se se crearan patrones, escalas y se dispondra de parametros, entre otras cosas, que nos permitan modificarlos en un GUI.
 
 4.GUI
 
@@ -20,9 +20,11 @@ Interfaz para el usuario.
 
 
 La arquitectura se divide en dos partes; los mudulos del programa y la unificacion del programa.
+
 El proyecto está dividido por modulos de funciones para que estos puedan ser programados simultaneamente.
 
 ParteI
+
 La primera parte debe ser terminada antes del 19 de noviembre
 
 Modulo de integracion
