@@ -6,7 +6,7 @@ Licencia - GNU General Public License v3.0
 
 Componentes
 
-1. Servidor de procesamientos matemáticos
+1 Servidor de procesamientos matemáticos
 
 Funcion integradora y Funcion derivadora
 Realiza con Wolfram Mathematica todas las operaciones de cáculo  enviadas por SuperCollider y regresa una solución general al problema así como los puntos de la gráfica de la función matemática, tal gráfica será usada por SuperCollider para llenar un arreglo unidimensional de valores que serán servidos en un streams paralelos a diferentes generadores de audio para construir la experiencia sonora.
@@ -15,9 +15,7 @@ Realiza con Wolfram Mathematica todas las operaciones de cáculo  enviadas por S
 
 En esta seccion, a partir de synths y generadores unitarios se se crearan patrones, escalas y efectos.
 
-4.GUI - Interfaz para el usuario.
-
-5. codigo que nos permita usar el teclado en conjunto (usar codigo de diego) - SIN TERMINAR
+3.GUI - Interfaz para el usuario.
 
 Video tutorial del software - 
 https://www.youtube.com/watch?v=D2h2Vl4OYZs
@@ -61,7 +59,7 @@ codigo para usar el teclado
 
 Modulo 9 - GUI - Cabe mencionar que el GUI sera solo un cascaron hasta que los primeros dos modulos esten terminados y se unifique el codigo.
 
-caracteristicas de la interfaz:
+caracteristicas propuestas de la interfaz:
 1. Que funcione
 2. Espacio en blanco para ingresas la ecuacion
 3. Serie de botones que idiquen que operacion se le hara a la ecuacion
