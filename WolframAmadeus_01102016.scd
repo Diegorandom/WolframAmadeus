@@ -1,3 +1,5 @@
+//Por Diego Ignacio Ortega
+
 (
 var inputG, genButt, genButt2, funLoop, writerD, writerI, archivo_integ, solucion, respuesta_integ, respuesta_deriv, archivo_deriv, tabla_integ, tabla_deriv, tabla_deriv_file, tabla_integ_file, fun_deriv_tabla, tabla_deriv_array, tabla_integ_array, graficador, freq=0, fasesynth, fase, desFase, root, freqSwitch, tabla=[nil], freqChange, faseChange, faseSwitch, panChange, panSwitch, vibSwitch, vibChange, noiseSwitch, noiseChange, gaussSwitch, gaussChange, dustChange, dustSwitch, delaySwitch, delayChange, faseref, freqref, panref, vibref, noiseref, gaussref, dustref, delayref;
 
