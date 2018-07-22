@@ -9,7 +9,7 @@ Componentes
 1 Servidor de procesamientos matemáticos
 
 Funcion integradora y Funcion derivadora
-Realiza con Wolfram Mathematica todas las operaciones de cáculo  enviadas por SuperCollider y regresa una solución general al problema así como los puntos de la gráfica de la función matemática, tal gráfica será usada por SuperCollider para llenar un arreglo unidimensional de valores que serán servidos en un streams paralelos a diferentes generadores de audio para construir la experiencia sonora.
+Realiza con Wolfram Mathematica (Versión 9) todas las operaciones de cáculo  enviadas por SuperCollider y regresa una solución general al problema así como los puntos de la gráfica de la función matemática, tal gráfica será usada por SuperCollider para llenar un arreglo unidimensional de valores que serán servidos en un streams paralelos a diferentes generadores de audio para construir la experiencia sonora.
 
 2.GUI y asignación de paramétros
 
