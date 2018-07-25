@@ -1,0 +1,39 @@
+RunScheduledTask[
+  Clear[datain, datafromsc, funinteg];
+  datafromsc = 
+   Import["/Users/macbookair/Documents/WolframAmadeus/wftemp/data_\
+integ.txt"];
+  datain = ToExpression[datafromsc, TeXForm];
+  
+  If[datain === 0, Print["waiting"],
+   funinteg = Integrate[datain, x];
+   Print[funinteg];
+   Export[
+    "/Users/macbookair/Documents/WolframAmadeus/wftemp/data_integ_\
+return.txt", funinteg];
+   tablainteg = Table[N[funinteg], {x, 0, 20, 0.1}];
+   Export[
+    "/Users/macbookair/Documents/WolframAmadeus/wftemp/data_\
+tablainteg_return.txt", tablainteg];
+   ];
+  
+  Clear[datain, datafromsc, funderiv, tabladeriv];
+  datafromsc = 
+   Import["/Users/macbookair/Documents/WolframAmadeus/wftemp/data_\
+deriv.txt"];
+  datain[x_] = ToExpression[datafromsc, TeXForm];
+  funderiv = D[datain[x], x];
+  
+  If[funderiv === 0, Print["waiting"],
+   Print[funderiv];
+   Export[
+    "/Users/macbookair/Documents/WolframAmadeus/wftemp/data_deriv_\
+return.txt", funderiv];
+   tabladeriv = Table[N[funderiv], {x, 0, 20, 0.1}];
+   Export[
+    "/Users/macbookair/Documents/WolframAmadeus/wftemp/data_\
+tabladeriv_return.txt", tabladeriv];
+   ];
+  , 0.1];
+  
+  ScheduledTasks[]
