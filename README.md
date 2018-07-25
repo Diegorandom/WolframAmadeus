@@ -16,7 +16,7 @@ No estoy utilizando un protocolo de comunicación tradicional. Es bastante rudim
 Una vez corriendo en paralelo ambos códigos (WolframAmadeus/WolframAmadeus_01102016.scd y WolframAmadeus/wftemp/Integ-deriv_Program (con tabulacion).nb ), el protocolo de comunicación consiste de un (pseudo)-sistema Servidor-Cliente donde Mathematica revisa cada X milisegundos si alguno de los archivos temporales en wftemp correspondientes a los diferentes procesos de cálculo ha sido modificado. 
 
 
-En caso de que SC modifique el archivo .txt con una nueva ecuación matemática, Mathematica tiene algunos .6 (Muchísimo tiempo) segundos para leer el archivo de texto y comenzar a procesar la ecuación. Después de este tiempo, el archivo es reseteado a un valor default (cero).
+En caso de que SC modifique el archivo .txt con una nueva ecuación matemática, Mathematica tiene algunos .6 segs (Muchísimo tiempo) segundos para leer el archivo de texto y comenzar a procesar la ecuación. Después de este tiempo, el archivo es reseteado a un valor default (cero).
 
 
 Entonces, Mathematica procesará esta ecuación de cálculo, la cual debió ser escrita en SC por el usuario en textFormat (nada agradable de escribir, lo sé, te invito a mejorarlo ;) ). 
@@ -26,6 +26,8 @@ Tomemos en cuenta que la ecuación puede ser súper compleja, Wolfram Mathematic
 
 
 Una vez resuelta la ecuación se reenvía a SC con el mismo protocolo de comunicación.
+
+Entonces SC utiliza el arreglo de valores de la gráfica de la respuesta general de la función para ser stremeada por cada uno de los módulos que se mencionan más adelante.
 
 
 Componentes
@@ -83,11 +85,11 @@ Modulo 9 - GUI - Cabe mencionar que el GUI sera solo un cascaron hasta que los p
 
 caracteristicas propuestas de la interfaz:
 1. Que funcione
-2. Espacio en blanco para ingresar la ecuación
-3. Serie de botones que indiquen que operacion se aplica a la ecuacion
+2. Espacio en blanco para ingresar la función
+3. Serie de botones que indiquen que operacion se aplica a la función
    -Derivar
    -integrar
-4. Espacio donde aparezca la solucion de la ecuacion y la grafica de la solucion
+4. Espacio donde aparezca la solucion de la función y la grafica de la solucion
 5. Serie de botones en donde se podrá elegir que parámetro tomará la gráfica de la solución.
 6. Un botón que detone solo la última señal creada.
 7. Un boton detonador del patron/estructura/sonido creado a partir de la grafica. Cada vez que si presione el boton se deben detonar todos los patrones/estructuras/sonidos creados hasta el momento con el fin de integrar todos los elementos en una misma composicion 
