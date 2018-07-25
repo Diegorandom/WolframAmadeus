@@ -13,7 +13,7 @@ El servidor escribe la información en un archivo de texto y el cliente lee la i
 No estoy utilizando un protocolo de comunicación tradicional. Es bastante rudimentario de hecho. Es necesario correr el código el código en SC y mathematica en paralelo. Tienes que tener Mathematica 9 instalado para correr el código (El código corre pero no se comporta de forma esperada en las nuevas versiones del Mathematica, especulo que las nuevas versiones descontinuaron algunas de las funciones que estoy usando ).
 
 
-Una vez corriendo en paralelo ambos códigos (WolframAmadeus/WolframAmadeus_01102016.scd y WolframAmadeus/wftemp/Integ-deriv_Program (con tabulacion).nb ), el protocolo de comunicación consiste de un (pseudo)-sistema Servidor-Cliente donde Mathematica revisa cada X milisegundos si alguno de los archivos ha sido modificado. 
+Una vez corriendo en paralelo ambos códigos (WolframAmadeus/WolframAmadeus_01102016.scd y WolframAmadeus/wftemp/Integ-deriv_Program (con tabulacion).nb ), el protocolo de comunicación consiste de un (pseudo)-sistema Servidor-Cliente donde Mathematica revisa cada X milisegundos si alguno de los archivos temporales en wftemp correspondientes a los diferentes procesos de cálculo ha sido modificado. 
 
 
 En caso de que SC modifique el archivo .txt con una nueva ecuación matemática, Mathematica tiene algunos .6 (Muchísimo tiempo) segundos para leer el archivo de texto y comenzar a procesar la ecuación. Después de este tiempo, el archivo es reseteado a un valor default (cero).
