@@ -1,3 +1,6 @@
+Esta es una referencia del código de mathematica sin compilar, aqui se resuelven las funciones.
+Es un archivo de texto, el original está en wftemp y es necesario tener mathematica 9 para compilarlo y ver el siguiente código ->
+
 RunScheduledTask[
   Clear[datain, datafromsc, funinteg];
   datafromsc = 
