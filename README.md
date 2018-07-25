@@ -16,10 +16,10 @@ No estoy utilizando un protocolo de comunicación tradicional. Es bastante rudim
 Una vez corriendo en paralelo ambos códigos (WolframAmadeus/WolframAmadeus_01102016.scd y WolframAmadeus/wftemp/Integ-deriv_Program (con tabulacion).nb ), el protocolo de comunicación consiste de un (pseudo)-sistema Servidor-Cliente donde Mathematica revisa cada X milisegundos si alguno de los archivos temporales en wftemp correspondientes a los diferentes procesos de cálculo ha sido modificado. 
 
 
-En caso de que SC modifique el archivo .txt con una nueva función matemática, Mathematica tiene algunos .6 segs (Muchísimo tiempo) segundos para leer el archivo de texto y comenzar a procesar la función. Después de este tiempo, el archivo es reseteado a un valor default (cero).
+En caso de que SC modifique el archivo .txt con una nueva función matemática, Mathematica tiene algunos .6 segs (Muchísimo tiempo) para leer el archivo de texto y comenzar a procesar la función. Después de este tiempo, el archivo es reseteado a un valor default (cero).
 
 
-Entonces, Mathematica procesará esta función de cálculo, la cual debió ser escrita en SC por el usuario en textFormat (nada agradable de escribir, lo sé, te invito a mejorarlo ;) ). 
+Entonces, Mathematica procesará esta función de Cálculo Integral/Diferencial, la cual debió ser escrita en SC por el usuario en textFormat (nada agradable de escribir, lo sé, te invito a mejorarlo ;) ). 
 
 
 Tomemos en cuenta que la función puede ser súper compleja, Wolfram Mathematica es capaz de resolver las más dificiles de las integrales, todo ingeniero ha usado el servicio web (mucho más lento que el embebido en su IDE) en cuestión de segundos. 
