@@ -83,19 +83,4 @@ codigo para usar el teclado
 
 Modulo 9 - GUI - Cabe mencionar que el GUI sera solo un cascaron hasta que los primeros dos modulos esten terminados y se unifique el codigo.
 
-caracteristicas propuestas de la interfaz:
-1. Que funcione
-2. Espacio en blanco para ingresar la función
-3. Serie de botones que indiquen que operacion se aplica a la función
-   -Derivar
-   -integrar
-4. Espacio donde aparezca la solucion de la función y la grafica de la solucion
-5. Serie de botones en donde se podrá elegir que parámetro tomará la gráfica de la solución.
-6. Un botón que detone solo la última señal creada.
-7. Un boton detonador del patron/estructura/sonido creado a partir de la grafica. Cada vez que si presione el boton se deben detonar todos los patrones/estructuras/sonidos creados hasta el momento con el fin de integrar todos los elementos en una misma composicion 
-8. Opcion de grabacion en un directorio que el usuario pueda elegir - SIN TERMINAR
-9. Posibilidad de repetir el procedimiento con el fin de reproducir todos los elementos en conjunto. - SIN TERMINAR
-10. Boton que nos permita utilizar un teclado MIDI - SIN TERMINAR
-10. Boton de reset
-
 Por Diego Ignacio Ortega
