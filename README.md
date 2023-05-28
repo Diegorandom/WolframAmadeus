@@ -42,8 +42,8 @@ Realiza con Wolfram Mathematica (Versión 9) todas las operaciones de cáculo  e
 
 En esta seccion, a partir de synths y generadores unitarios se crearán patrones, escalas y efectos.
 
-![architecture](images/UI.png)
 #### 3.GUI - Interfaz para el usuario.
+![architecture](images/UI.png)
 
 ## Video tutorial del software - 
 https://www.youtube.com/watch?v=D2h2Vl4OYZs
@@ -51,31 +51,31 @@ https://www.youtube.com/watch?v=D2h2Vl4OYZs
 ## Módulos
 El proyecto está dividido por modulos de funciones para que estos puedan ser programados simultaneamente.
 
-Modulo de integracion -
+- Modulo de integracion 
 Funcion de integracion que devuelva la solución y la gráfica
 
-Modulo de derivacion -
+- Modulo de derivacion 
 Funcion de derivacion que devuelva la solución y la gráfica
 
-Modulo de patrones -
+- Modulo de patrones 
 Funcion que generará un patrón de percusiones en caso de que a gráfica de la solucion controle el volumen de la señal raiz
 
-Modulo de reverb -
+- Modulo de reverb 
 Funcion que generará un reverb en caso que la grafica de la solucion controle un reverb sobre la señal raiz
 
-Modulo de desfase -
+- Modulo de desfase 
 Funcion que genere un desfase en caso de que la grafica de la solucion controle la fase de una señal raiz
 
-Modulo Pulso  -
+- Modulo Pulso  
 Funcion que genere un pulso cuando queremos que la gráfica controle la tasa de pulsos
 
-Modulo de paneo  -
+- Modulo de paneo  
 funcion que panie el synth raiz
 
-Modulo de vibrato -
+- Modulo de vibrato 
 vibrato sobre el synth raiz
 
-Modulo de delay -
+- Modulo de delay 
 delay sobre la senal raiz
 
 Por Diego Ignacio Ortega
