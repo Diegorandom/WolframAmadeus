@@ -1,10 +1,11 @@
 # WolframAmadeus
 
-Arquitectura del proyecto 
+## Arquitectura del proyecto 
+![architecture](images/architecture.png)
 
 Licencia - GNU General Public License v3.0
 
-Protocolo de comunicación entre Mathematica y SC
+### Protocolo de comunicación entre Mathematica y SC
 
 Sistema de servidor-cliente donde el servidor es mathematica y SC es el cliente. 
 El servidor escribe la información en un archivo de texto y el cliente lee la información del archivo.
@@ -30,26 +31,25 @@ Una vez resuelta la función se reenvía a SC con el mismo protocolo de comunica
 Entonces SC utiliza el arreglo de valores de la gráfica de la respuesta general de la función para ser stremeada por cada uno de los módulos que se mencionan más adelante.
 
 
-Componentes
+### Componentes
 
-1 Servidor de procesamientos matemáticos
+#### 1 Servidor de procesamientos matemáticos
 
 Funcion integradora y Funcion derivadora
 Realiza con Wolfram Mathematica (Versión 9) todas las operaciones de cáculo  enviadas por SuperCollider y regresa una solución general al problema así como los puntos de la gráfica de la función matemática, tal gráfica será usada por SuperCollider para llenar un arreglo unidimensional de valores que serán servidos en un streams paralelos a diferentes generadores de audio para construir la experiencia sonora.
 
-2.GUI y asignación de paramétros
+#### 2.GUI y asignación de paramétros
 
 En esta seccion, a partir de synths y generadores unitarios se crearán patrones, escalas y efectos.
 
-3.GUI - Interfaz para el usuario.
+![architecture](images/UI.png)
+#### 3.GUI - Interfaz para el usuario.
 
-Video tutorial del software - 
+## Video tutorial del software - 
 https://www.youtube.com/watch?v=D2h2Vl4OYZs
 
+## Módulos
 El proyecto está dividido por modulos de funciones para que estos puedan ser programados simultaneamente.
-La arquitectura se divide en dos partes; los mudulos del programa y la unificacion del programa.
-
-Parte I
 
 Modulo de integracion -
 Funcion de integracion que devuelva la solución y la gráfica
@@ -77,10 +77,5 @@ vibrato sobre el synth raiz
 
 Modulo de delay -
 delay sobre la senal raiz
-
-Modulo 8 - SIN TERMINAR
-codigo para usar el teclado
-
-Modulo 9 - GUI - Cabe mencionar que el GUI sera solo un cascaron hasta que los primeros dos modulos esten terminados y se unifique el codigo.
 
 Por Diego Ignacio Ortega
