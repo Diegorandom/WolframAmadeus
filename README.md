@@ -1,3 +1,6 @@
+# Medium Article
+https://medium.com/@diegoignacioortega/music-of-mathematica-70ccdfeb2e42
+
 # WolframAmadeus
 
 Arquitectura del proyecto 
