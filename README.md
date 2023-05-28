@@ -1,13 +1,10 @@
 # WolframAmadeus
 
-## Arquitectura del proyecto]
 ![architecture](images/architecture.png)
 
 ### [Video tutorial del software](https://medium.com/@diegoignacioortega/music-of-mathematica-70ccdfeb2e42)
 
 ### [Artículo en inglés](https://medium.com/@diegoignacioortega/music-of-mathematica-70ccdfeb2e42)
-
-Licencia - GNU General Public License v3.0
 
 ## Protocolo de comunicación entre Mathematica y SC
 
