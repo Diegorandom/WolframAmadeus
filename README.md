@@ -1,10 +1,11 @@
 # WolframAmadeus
 
-## Arquitectura del proyecto 
+## Arquitectura del proyecto]
 ![architecture](images/architecture.png)
 
-## Video tutorial del software - 
-https://www.youtube.com/watch?v=D2h2Vl4OYZs
+## [Video tutorial del software] (https://medium.com/@diegoignacioortega/music-of-mathematica-70ccdfeb2e42)
+
+## [Artículo en inglés] (https://medium.com/@diegoignacioortega/music-of-mathematica-70ccdfeb2e42)
 
 Licencia - GNU General Public License v3.0
 
