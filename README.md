@@ -6,7 +6,7 @@
 
 ### [Video tutorial del software](https://www.youtube.com/watch?v=D2h2Vl4OYZs&t=1s)
 
-### [Artículo en inglés](https://medium.com/@diegoignacioortega/music-of-mathematica-70ccdfeb2e42)
+### [Description in english](https://medium.com/@diegoignacioortega/music-of-mathematica-70ccdfeb2e42)
 
 ## Protocolo de comunicación entre Mathematica y SC
 
