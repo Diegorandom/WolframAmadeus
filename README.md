@@ -1,3 +1,5 @@
+![architecture](infograficoREADME.jpg)
+
 # WolframAmadeus
 
 ![architecture](images/architecture.png)
